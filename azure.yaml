@@ -1,0 +1,15 @@
+# azd config — provisions infra defined in infra/main.bicep at subscription
+# scope. Parameters are read from the azd environment via main.bicepparam.
+name: foundry-workload-studio
+metadata:
+  template: foundry-workload-studio@1.0.0
+infra:
+  provider: bicep
+  path: infra
+  module: main
+hooks:
+  postprovision:
+    shell: sh
+    run: ./scripts/azd-postprovision.sh
+    interactive: false
+    continueOnError: false

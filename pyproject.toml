@@ -1,0 +1,75 @@
+[project]
+name = "foundry-workload-studio"
+version = "0.1.0"
+description = "Foundry Workload Studio — reusable for governed, production-ready Microsoft Foundry AI workloads (HR, Clinical, Quality, Maintenance)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Foundry Workload Studio" }]
+dependencies = [
+    # Microsoft Foundry / Agents (azure-ai-projects v2 Agents API)
+    "azure-ai-projects>=2.2.0",
+    "openai>=2.40.0",
+    "agent-framework>=1.7.0",
+    # Azure SDKs
+    "azure-identity>=1.25.0",
+    "azure-search-documents==11.7.0b2",
+    "azure-storage-blob>=12.29.0",
+    "azure-cosmos>=4.16.0",
+    "azure-keyvault-secrets>=4.11.0",
+    "azure-monitor-opentelemetry>=1.8.8",
+    # API
+    "fastapi>=0.136.0",
+    "uvicorn[standard]>=0.48.0",
+    "httpx>=0.28.1",
+    # Data
+    "pydantic>=2.13.0",
+    "pydantic-settings>=2.14.0",
+    "python-dotenv>=1.2.0",
+    # Observability
+    "opentelemetry-api>=1.40.0",
+    "opentelemetry-sdk>=1.40.0",
+    "opentelemetry-instrumentation-fastapi>=0.61b0",
+    "structlog>=25.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.0",
+    "pytest-asyncio>=1.4.0",
+    "pytest-cov>=7.1.0",
+    "pytest-mock>=3.15.0",
+    "ruff>=0.15.0",
+    "mypy>=2.1.0",
+    "respx>=0.23.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.uv]
+package = true
+prerelease = "allow"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-ra --strict-markers"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "S", "C4", "SIM", "RUF"]
+ignore = ["S101"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true

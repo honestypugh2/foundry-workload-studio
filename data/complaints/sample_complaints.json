@@ -1,0 +1,37 @@
+[
+  {
+    "complaint_id": "CMP-001",
+    "customer_id": "CUST-1001",
+    "device_model": "LX-200",
+    "description": "Customer reports inconsistent pulse behavior on device LX-200 after 20 minutes of operation with intermittent cooling alarm warnings. No patient harm reported.",
+    "submitted_at": "2025-02-12T10:14:00Z"
+  },
+  {
+    "complaint_id": "CMP-002",
+    "customer_id": "CUST-1002",
+    "device_model": "LX-200",
+    "description": "Touchscreen UI freezes during the calibration workflow. Procedure aborted. Firmware version 4.2.1.",
+    "submitted_at": "2025-02-12T11:02:00Z"
+  },
+  {
+    "complaint_id": "CMP-003",
+    "customer_id": "CUST-1003",
+    "device_model": "LX-100",
+    "description": "Coolant leak observed at the rear of the chassis. Smoke alarm in the procedure room briefly activated. Patient was not in the room.",
+    "submitted_at": "2025-02-13T08:45:00Z"
+  },
+  {
+    "complaint_id": "CMP-004",
+    "customer_id": "CUST-1004",
+    "device_model": "LX-200",
+    "description": "How do I install the new firmware update on the LX-200 platform?",
+    "submitted_at": "2025-02-13T09:20:00Z"
+  },
+  {
+    "complaint_id": "CMP-005",
+    "customer_id": "CUST-1005",
+    "device_model": "LX-200",
+    "description": "Patient reported a minor burn following the second pass during a treatment. Device alarms did not trigger. Device LX-200 unit DEV-4421.",
+    "submitted_at": "2025-02-14T13:50:00Z"
+  }
+]

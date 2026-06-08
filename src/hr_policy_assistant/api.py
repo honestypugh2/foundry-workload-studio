@@ -1,0 +1,27 @@
+"""FastAPI app for the HR Policy Assistant."""
+
+from __future__ import annotations
+
+from fastapi import FastAPI
+
+from src.common.models import ChatRequest, ChatResponse
+from src.common.telemetry import configure_telemetry
+from src.hr_policy_assistant.agent import agent_answer
+
+
+def create_app() -> FastAPI:
+    configure_telemetry()
+    app = FastAPI(title="HR Policy Assistant", version="0.1.0")
+
+    @app.get("/healthz")
+    def healthz() -> dict[str, str]:
+        return {"status": "ok"}
+
+    @app.post("/chat", response_model=ChatResponse)
+    def chat(req: ChatRequest) -> ChatResponse:
+        return agent_answer(req.question, session_id=req.session_id)
+
+    return app
+
+
+app = create_app()

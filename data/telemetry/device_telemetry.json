@@ -1,0 +1,23 @@
+[
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:00:00Z", "metric": "cooling_temp_c", "value": 22.1, "unit": "C"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:15:00Z", "metric": "cooling_temp_c", "value": 24.8, "unit": "C"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:30:00Z", "metric": "cooling_temp_c", "value": 27.5, "unit": "C"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:45:00Z", "metric": "cooling_temp_c", "value": 30.4, "unit": "C"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T10:00:00Z", "metric": "cooling_temp_c", "value": 31.9, "unit": "C"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:00:00Z", "metric": "pulse_energy_j", "value": 1.02, "unit": "J"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:30:00Z", "metric": "pulse_energy_j", "value": 0.97, "unit": "J"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T10:00:00Z", "metric": "pulse_energy_j", "value": 0.74, "unit": "J"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:00:00Z", "metric": "pump_pressure_psi", "value": 72.0, "unit": "PSI"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:30:00Z", "metric": "pump_pressure_psi", "value": 58.0, "unit": "PSI"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T10:00:00Z", "metric": "pump_pressure_psi", "value": 38.0, "unit": "PSI"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T09:00:00Z", "metric": "vibration_g", "value": 0.21, "unit": "g"},
+  {"device_id": "DEV-4421", "timestamp": "2025-02-12T10:00:00Z", "metric": "vibration_g", "value": 0.34, "unit": "g"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T09:00:00Z", "metric": "cooling_temp_c", "value": 21.5, "unit": "C"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T10:00:00Z", "metric": "cooling_temp_c", "value": 22.0, "unit": "C"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T09:00:00Z", "metric": "pulse_energy_j", "value": 1.00, "unit": "J"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T10:00:00Z", "metric": "pulse_energy_j", "value": 1.01, "unit": "J"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T09:00:00Z", "metric": "pump_pressure_psi", "value": 70.0, "unit": "PSI"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T10:00:00Z", "metric": "pump_pressure_psi", "value": 71.0, "unit": "PSI"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T09:00:00Z", "metric": "vibration_g", "value": 0.18, "unit": "g"},
+  {"device_id": "DEV-4422", "timestamp": "2025-02-12T10:00:00Z", "metric": "vibration_g", "value": 0.19, "unit": "g"}
+]
