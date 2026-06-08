@@ -31,7 +31,7 @@ The repo ships with a React + Vite **Explorer** that fronts a FastAPI gateway. P
 
 The landing page lists every registered use case and shows live status for each backing Azure service (Microsoft Foundry **LIVE**, AI Search, Storage, Key Vault, Monitor).
 
-![Explorer overview — use case catalog and live Azure service status](docs/images/overview.png)
+![Explorer overview — use case catalog and live Azure service status](docs/images/overview_main.png)
 
 ### HR Policy Assistant (RAG)
 
